@@ -1,0 +1,908 @@
+@charset "UTF-8";
+/* リセットCSSのdestyle.cssを使用*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border: 0;
+  border-top: 1px solid;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+  vertical-align: bottom;
+}
+
+embed,
+object,
+iframe {
+  border: 0;
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+button[disabled],
+[type="button"][disabled],
+[type="reset"][disabled],
+[type="submit"][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*-----------------
+変数
+-----------------*/
+/*-----------------
+レスポンシブ
+-----------------*/
+/*--------------------------------
+base
+--------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.section-wrapper {
+  max-width: 1004px;
+  margin: 0 auto;
+}
+
+.section-title-en {
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-size: 4.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.section-title-border-l {
+  position: absolute;
+  display: block;
+  top: 63px;
+  width: 69px;
+  height: 5px;
+  background-color: #000;
+}
+
+.section-title-border-c {
+  position: absolute;
+  display: block;
+  top: 63px;
+  width: 69px;
+  height: 5px;
+  background-color: #000;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*--------------------------------
+header
+--------------------------------*/
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 27px 0 40px;
+}
+
+.header-logo__title {
+  margin-top: 36px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.header-logo__text {
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.header-nav__item {
+  margin-right: 64px;
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.header-nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav-border {
+  border-bottom: 3px solid #fff;
+}
+
+/*--------------------------------
+kv
+--------------------------------*/
+.kv {
+  height: 800px;
+  background-image: url(../images/kv.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 360px;
+  padding-left: 10%;
+}
+
+.kv-content {
+  width: 475px;
+}
+
+.kv-content__title {
+  margin-bottom: 23px;
+  font-family: "Montserrat";
+  font-size: 6.4rem;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #fff;
+}
+
+.kv-content__text {
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  line-height: 1.333;
+  color: #fff;
+}
+
+.kv-arrow-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 33px;
+}
+
+.kv-arrow {
+  position: relative;
+}
+
+.kv-arrow__left {
+  position: absolute;
+  left: -7px;
+  display: block;
+  width: 26px;
+  border-bottom: 7px solid #fff;
+  border-radius: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.kv-arrow__right {
+  position: absolute;
+  left: 7px;
+  display: block;
+  width: 26px;
+  border-bottom: 7px solid #fff;
+  border-radius: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/*--------------------------------
+about
+--------------------------------*/
+.media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 152px;
+}
+
+.media-content {
+  max-width: 409px;
+  padding: 72px 68px 58px;
+  background-color: #F2F2F2;
+}
+
+.media-content__title {
+  margin: 36px 0 12px;
+  font-size: 2.4rem;
+}
+
+.media-content__text {
+  line-height: 2;
+}
+
+/*--------------------------------
+item
+--------------------------------*/
+.item-section {
+  margin-top: 147px;
+}
+
+.item-section .cards {
+  margin-top: 21px;
+}
+
+.item-section .cards__item {
+  width: 32.2%;
+}
+
+.item-section .cards__item:last-child .cards__text {
+  text-align: center;
+}
+
+.item-section .cards__cat {
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.item-section .cards__title {
+  margin-top: 27px;
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.item-section .cards__text {
+  margin-top: 20px;
+  line-height: 1.75;
+}
+
+/*--------------------------------
+price
+--------------------------------*/
+.price-section {
+  position: relative;
+  margin-top: 153px;
+  margin-bottom: 152px;
+  height: 977px;
+}
+
+.price-section__content {
+  max-width: 494px;
+  padding: 55px 85px 67px;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.8;
+  border: 5px solid #A38787;
+}
+
+.price-section__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.price-section .section-title-en {
+  margin-bottom: 38px;
+}
+
+.price-list {
+  margin-top: 79px;
+}
+
+.price-list__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 3;
+  border-bottom: 1px dotted #707070;
+}
+
+.price-list__item:last-child {
+  border: none;
+}
+
+/*--------------------------------
+blog
+--------------------------------*/
+.blog-section {
+  padding: 134px 0 134px;
+  background-color: #F2F2F2;
+}
+
+.blog-section .cards {
+  margin-top: 60px;
+}
+
+.blog-section .cards__item {
+  width: 32.2%;
+  letter-spacing: 0.01em;
+  line-height: 2;
+}
+
+.blog-section .cards__date {
+  display: inline-block;
+  margin: 29px 18px 0 0;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.blog-section .cards__cat {
+  color: #4D4D4D;
+}
+
+.blog-section .cards__text {
+  margin-left: 5px;
+}
+
+.blog-section .section-title-en {
+  margin-bottom: 41px;
+}
+
+/*--------------------------------
+access
+--------------------------------*/
+.access-section {
+  padding: 150px 0 219px;
+}
+
+.access-section .section-title-en {
+  margin-bottom: 41px;
+}
+
+.access-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 91px;
+  margin-bottom: 147px;
+}
+
+.access-content__title {
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #101010;
+  text-transform: uppercase;
+}
+
+.access-content__text {
+  margin-bottom: 27px;
+  color: #101010;
+}
+
+.access-description {
+  max-width: 751px;
+  margin: 0 auto;
+}
+
+.access-description__title {
+  margin-bottom: 28px;
+  font-size: 2.4rem;
+  line-height: 1.33;
+}
+
+.access-description__text {
+  margin-bottom: 20px;
+  color: #101010;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+/*--------------------------------
+footer
+--------------------------------*/
+.footer {
+  padding: 77px 0 90px;
+  background-color: #6F6565;
+  text-align: center;
+}
+
+.footer__text {
+  font-family: "Montserrat";
+  font-size: 8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
